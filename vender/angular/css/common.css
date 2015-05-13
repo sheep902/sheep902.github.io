@@ -1,0 +1,151 @@
+.ng-main960{width:960px; margin:0 auto; padding-top:10px;}
+
+.x-panel-tbar{clear:both;}
+.coll-add-left{float:left; width:300px;}
+.coll-add-main{border:1px solid #d6e1e9; padding:20px; float:left; width:618px; margin-left: -1px;}
+.coll-add-main h3{font-size: 24px; color: #0076bc; padding:0 10px 4px 0;}
+.vb-icon{overflow: hidden; width:18px; height: 16px; text-indent:-999em; float:right; margin-right:8px;}
+.vb-icon em{display:block !important;}
+.coll-radio{padding:10px 0 15px; line-height: 16px; overflow: hidden;}
+.coll-radio input{float:left; margin:4px 4px 0 0;}
+.coll-radio .radio-inline{margin-right:15px;}
+.ngRow .sort-desc,.ngRow .sort-asc{display: none}
+.ngRow:hover .sort-desc,.ngRow:hover .sort-asc{display: block;}
+
+
+.x-form-item{overflow: hidden;}
+.coll-select{ position: relative; height:30px;}
+.coll-select .createNewPlan{margin:5px 0 0 20px;}
+.x-form-item .btn{margin-right:12px;}
+.coll-pop-main{position: absolute; left:0; z-index:500; top:0; border:1px solid #d6e1e9; background-color: #fff;}
+.coll-pop-main-inn{ padding:20px;}
+.coll-pop-main .x-form-item-label{text-align:right;}
+
+.coll-selected{overflow: hidden; margin-bottom:15px;}
+.coll-selected p{margin-bottom:8px;}
+
+.ng-close{position: absolute; right:7px; font-size: 18px; cursor: pointer; color: #bbb; top:3px;}
+.coll-panls{margin-bottom:20px;}
+.coll-all-panls .createNewPlan{margin-top:10px; display: block;}
+
+.ui-select .btn .caret {margin:7px 5px 0 8px !important;}
+.ui-select .btn{background: #fff url(../..//ext-3.3.0/resources/images/blue/public/repeat_bg.png) left -304px repeat-x; }
+
+.glyphicon{height: 16px;width: 16px;display: inline-block;*zoom:1;*display: inline;}
+.glyphicon-chevron-left{background:url(../..//ext-3.3.0/resources/images/default/shared/left-btn.gif);}
+.glyphicon-chevron-right{background:url(../..//ext-3.3.0/resources/images/default/shared/right-btn.gif);}
+
+
+.input-datapicker  i.x-form-trigger{border:0px;background:url(../..//ext-3.3.0/resources/images/blue/form/date_trigger.png) no-repeat 0px -3px;height: 16px;
+    width: 17px; display:inline-block; position: absolute; right:3px; top:5px; cursor: pointer;}
+
+.monthSelect{overflow: hidden;}
+.monthSelect ul{float:left; margin-right: 10px;margin-bottom: 1px;}
+.monthSelect li{float:left; width:28px;height: 28px; cursor: pointer; line-height: 30px; text-align: center;border:1px solid #ebebeb;margin-right: -1px;margin-bottom:-1px;}
+.monthSelect li.active{border:1px solid #ff7c00;background:url(../..//ext-3.3.0/resources/images/blue/form/choose_field_sel.png) right bottom no-repeat;position:relative;}
+.monthSelect li span{display: block;}
+.monthSelect .select{float:left; margin-right: 10px; cursor: pointer; line-height: 30px;}
+.daySelect ul{width:230px;}
+.daySelect li.monthEnd{width:auto; padding:0 12px;}
+
+.coll-add-left{border-bottom:1px solid #aac0d4;}
+.coll-wizardSteps{padding:10px 0 15px;}
+.coll-wizardStep{margin: 0 20px; position: relative; border-left: solid 1px #ccc; cursor: pointer;}
+.coll-wizardStep:last-child{border-left: solid 1px #fff;}
+.coll-wizardStep .coll-tab{padding-left: 20px;  margin-bottom:2px;}
+.coll-wizardStep:last-child .coll-tab{border-left: solid 1px #fff;}
+.coll-wizardStep .coll-tab-tag{background-color: #999;color: #fff;font-size: 0.8em;height:22px; left: -11px; line-height:23px; border-radius: 10px; position: absolute; text-align: center; top: 0; width: 22px;}
+.coll-current .coll-tab-tag{background-color: #3b7bea;}
+.coll-current{background-color: #eee;}
+.coll-cont-name{margin-bottom:5px;}
+.coll-wizardStep .coll-tab-name{font-size: 1.3em; line-height: 24px; display: inline-block;}
+.coll-wizardStep .coll-cont{padding:0 0 12px 20px;}
+.coll-cont-de p{color: #777; line-height:18px;}
+.coll-cont-name{font-size: 14px;}
+.coll-wizardStep-1 .coll-tab-tag{height:18px; width:18px; line-height: 19px; left:-9px; top:2px;}
+.coll-wizardStep-2 .coll-tab-tag{height:14px; width:14px; line-height: 15px; left:-7px; top:4px;}
+.coll-wizardStep a{color:#333}
+
+.coll-info{background-color:#f8f8f8; border: 1px solid #e5e5e5; padding:15px; position: relative; margin-bottom:20px;}
+.coll-info h4{margin-bottom:15px; font-size:16px;}
+.coll-info p{line-height:20px; color:#666}
+.coll-info .coll-preview-l{position: absolute; right:15px; top:18px;}
+.coll-schedule-list{overflow: hidden;}
+.coll-schedule-item{background-color:#f8f8f8; border: 1px solid #e5e5e5; padding:15px; float:left; margin:0 15px 15px 0; width:200px; height:100px; position: relative; cursor: pointer;}
+.coll-schedule-item:hover{background-color: #e8e8e8}
+.coll-schedule-item p{line-height:20px;}
+.coll-schedule-item .c-ti{margin-top:7px; overflow:hidden;}
+.coll-schedule-item span{font-size: 24px;}
+.coll-schedule-item .vb-icon{margin:12px 0 0 10px;}
+.coll-schedule-add .glyphicon{position: absolute; top:40%; left: 45%}
+.coll-schedule-add a{display: block; height:100px;}
+.coll-pop-action-h{font-size: 16px; color:#0076bc; margin-bottom:15px;}
+
+.grid-schedule .cell{padding: 5px 10px; overflow: hidden;}
+
+.am-bt{border-top: 1px solid #d4d4d4 !important}
+.am-bl{border-left: 1px solid #d4d4d4 !important}
+.am-br{border-right: 1px solid #d4d4d4 !important}
+.am-bb{border-bottom: 1px solid #d4d4d4 !important}
+.red {color: red;}
+.mt3{margin-top: 3px;}
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mr3{margin-right: 3px;}
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
+
+
+.ng-main-content{padding: 0 10px;}
+.ng-main-content .main-page-title{font-size: 16px; color: #0076bc; padding:20px 10px 4px 0;margin-bottom: 20px; }
+.ng-table-border{border:1px solid #ccc;}
+.ng-table-bt{border-top:1px solid #ccc;}
+.ng-table-br{border-right:1px solid #ccc;}
+.ng-table-btm{border-bottom:1px solid #ccc;}
+.ng-table-bl{border-left:1px solid #ccc;}
+
+
+.ui-adjust-code {position: relative;}
+.ui-adjust-code input{width:100% !important;box-sizing: border-box;height: 22px !important;}
+.adjust-code-tree {cursor: pointer; position: absolute;border: 1px solid #5a83a1;box-sizing: border-box;padding: 5px;
+    max-height: 250px;overflow: auto;background-color: #fff;width: 100%;z-index:999;min-width: 110px;}
+.adjust-code-tree a{color: #000000 ;}
+.ui-adjust-code input.error{border-color: #c41212 !important; }
+.ui-adjust-code .error input{border-color:  #c41212 !important;}
+.ui-adjust-code .x-form-field-wrap.error .search_trigger{border-bottom-color:  #c41212;background-position: -84px 0;}
+ul.adjust-code-tree .x-tree-node-icon{display: inline-block;*display: inline;*zoom: 1;height:16px;position: absolute;}
+ul.adjust-code-tree li{padding: 2px;height: 16px;line-height: 16px;overflow: hidden;}
+ul.adjust-code-tree li span{padding-left: 20px;display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+ul.adjust-code-tree li:hover{background-color: #eee;}
+ul.adjust-code-tree li.leaf:hover a{color: blue ;}
+ul.adjust-code-tree .level-1 { padding-left: 0;}
+ul.adjust-code-tree .level-2 {padding-left: 15px;}
+ul.adjust-code-tree .level-3 {padding-left: 30px;}
+ul.adjust-code-tree .level-4 {padding-left: 45px;}
+ul.adjust-code-tree .level-5 {padding-left: 60px;}
+ul.adjust-code-tree .level-6 {padding-left: 75px;}
+.ui-adjust-code  .search_trigger{position: absolute; right: 0;}
+.ui-adjust-code .clear_value{right: 20px;top:-1px;background-color: #fff;}
+
+input.ng-invalid.ng-dirty,form.ng-dirty input.ng-invalid.ng-dirty,
+/*form.ng-dirty input.ng-invalid,*/
+input.ng-invalid.error{ border-color: #c41212 !important; }
+input.ng-invalid.ng-dirty.no-error,form.ng-dirty input.ng-invalid.no-error{border-color: #aac0d4 !important;}
+
+/*ng-repeat 表格*/
+.ng-repeat-table{width:100%;}
+.ng-repeat-table td.ng-cell{float: none;border:1px solid #ccc;border-left:0;padding: 5px;}
+.ng-repeat-table .table_header td.ng-cell{background-color: #b8d8f0;padding: 0;}
+.ng-repeat-table .table_header td.ng-cell p{padding: 4px;}
+.ng-repeat-table td.ng-cell:first-child{border-left:1px solid #ccc;}
+.ng-repeat-table.no-border td.ng-cell{border: 0 !important;}
+.ng-repeat-table td.ng-cell p,.product_table td{text-align: center;}
+.ng-repeat-table td.ng-cell p.tlr,.product_table td.tlr p , td.tlr p,td.tlr {text-align: right !important;}
+.ng-repeat-table  .table_last td.ng-cell {border: 0;}
+.ng-repeat-table  .table_footer,.product_table  .table_content{margin-top: -1px;}
+
+label.control-static {font-weight: normal;text-align: left;}
+input{vertical-align: middle;}

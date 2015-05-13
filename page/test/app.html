@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ng实例</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../vender/other/icon.jpg" media="screen" />
+    <link type="text/css" rel="stylesheet" href="../../vender/angular/css/all-concat-min.css"/>
+    <link type="text/css" rel="stylesheet" href="test.css"/>
+</head>
+<body>
+<div style="margin:auto auto 0 auto;border: solid rgb(214,225,233);border-width:0;width:100%;" id="crmbilling">
+    <table style="width:100%; border:1px solid #d6e1e9; margin: 0 auto;">
+        <tr>
+            <td style="text-align:left;width:0px;vertical-align: top;" id="main_NavTree"></td>
+            <td style="width:100%; border-left:1px solid #d6e1e9;vertical-align: top;height:auto; zoom:1;" class="clearfix">
+                <div style="text-align:left;width:100%;vertical-align: top;display:inline-block;height:100% ;margin-top:0;*display:inline;*zoom:1;" class="main" id="main_region">
+                    <!--angular controller start-->
+                    <div id="angular-init"  ui-view="main" class="ng-main" ></div>
+                    <!--angular controller end-->
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+<script type="text/javascript" src='http://libs.baidu.com/jquery/2.0.0/jquery.min.js'></script>
+<script type='text/javascript' src='../../vender/angular/common-concat-min.js'></script>
+<script type='text/javascript' src='ng-js/gi18n.js'></script>
+<script type='text/javascript' src='ng-js/controllers.js'></script>
+<script type='text/javascript' src='ng-js/upc.controller.js'></script>
+<script type='text/javascript' src='ng-js/directives.js'></script>
+<script type='text/javascript' src='ng-js/services.js'></script>
+<script type='text/javascript' src='ng-js/router.js'></script>
+<script type='text/javascript'>
+    var lang = "en";
+    var contextPath = "";
+    angular.bootstrap(document.getElementById('angular-init'),['vb','test.controllers','test.directives','test.services']);
+
+</script>
+</html>
