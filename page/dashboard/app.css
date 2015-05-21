@@ -2,31 +2,38 @@ html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-  /*  background-color: #f3f3f3;*/
+}
+/*清除浮动*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 #header {
 }
 .menus {
-    width: 300px;
-    height: 100%;
     position: fixed;
+    width: 300px;
     top: 0;
+    left: 0;
+    height: 100%;
     visibility: hidden;
     text-align: center;
     line-height: 5;
     color: #191919;
     background-color: #f3f3f3;
-    -webkit-transition-delay: .3s;
-    -moz-transition-delay: .3s;
-    -o-transition-delay: .3s;
-    transition-delay: .3s;
-    left: 0;
+    /*在过渡开始前等待0.6s*/
+    -webkit-transition-delay: .6s;
+    -moz-transition-delay: .6s;
+    -o-transition-delay: .6s;
+    transition-delay: .6s;
     overflow: auto;
 }
 #wrap {
     position: fixed;
-    top: 0px;
-    left: 0;
+    z-index: 998;
     width: 100%;
     height:100%;
     line-height: 5;
@@ -34,23 +41,25 @@ html,body{
     text-align: center;
     overflow-x: hidden;
     overflow-y: auto;
-    z-index: 998;
     background-color: #f3f3f3;
-    /*把鼠标指针放到 div 元素上，其宽度会从逐渐变化*/
-    -webkit-transition: all .3s cubic-bezier(0.165,.84,.44,1);
-    -moz-transition: all .3s cubic-bezier(0.165,.84,.44,1);
-    -o-transition: all .3s cubic-bezier(0.165,.84,.44,1);
-    -ms-transition: all .3s cubic-bezier(0.165,.84,.44,1);
-    transition: all .3s cubic-bezier(0.165,.84,.44,1);
+    /*过渡效果：把鼠标指针放到 div 元素上，其宽度会从逐渐变化
+      对于#wrap里的全部样式，在0.6s内以cubic-bezier(0.165,.84,.44,1)的速度曲线开始过渡
+    */
+    -webkit-transition: all .6s cubic-bezier(0.165,.84,.44,1);
+    -moz-transition: all .6s cubic-bezier(0.165,.84,.44,1);
+    -o-transition: all .6s cubic-bezier(0.165,.84,.44,1);
+    -ms-transition: all .6s cubic-bezier(0.165,.84,.44,1);
+    transition: all .6s cubic-bezier(0.165,.84,.44,1);
 }
 
  body.push #wrap {
-     /*横轴移动*/
+     /*点击后右侧栏横轴移动一段距离*/
     -webkit-transform: translateX(305px);
     -moz-transform: translateX(305px);
     -o-transform: translateX(305px);
     -ms-transform: translateX(305px);
     transform: translateX(305px);
+     /*阴影*/
     -webkit-box-shadow: -3px 0px 6px rgba(0,0,0,.8);
     -moz-box-shadow: -3px 0px 6px rgba(0,0,0,.8);
     -o-box-shadow: -3px 0px 6px rgba(0,0,0,.8);
@@ -60,6 +69,7 @@ html,body{
 }
 body.push .menus {
     height: 100%;
+    /*visible元素可见*/
     visibility: visible;
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
@@ -70,24 +80,21 @@ body.push .menus {
     -o-box-shadow: -3px -3px 6px rgba(0,0,0,.8);
     -ms-box-shadow: -3px -3px 6px rgba(0,0,0,.8);
     box-shadow: 3px 2px 26px rgba(0,0,0,.8);
-    position: relative;
 }
 
 .main-bg{
-    background: url(./bg8.jpg) no-repeat top center;
-    background-attachment: fixed;
-    background-clip: border-box;
-    background-origin: padding-box;
+    /*图像随页面移动*/
+    background: url(./bg8.jpg) no-repeat scroll center;
     background-size: cover;
 }
 
 .home-box {
     width: 100%;
     height: 240px;
-    background: rgba(0,0,0,.3);
     padding: 20px;
-    color: #EEE;
     font-family: Georgia, serif;
+    background: rgba(0,0,0,.3);
+    color: #EEE;
 }
 
 .nav{
@@ -100,7 +107,8 @@ body.push .menus {
     font-size: 60px;
     font-weight: 700;
     line-height: 108px;
-    letter-spacing: 2px;
+    /*字母间距*/
+    letter-spacing: 5px;
     margin: 0 auto;
     padding: 0 28px;
     text-shadow: black 6px 4px 5px;
@@ -121,20 +129,22 @@ a:hover{
 
 .site-description{
     font-size: 18px;
-    letter-spacing: 2px;
+    /*字母间距*/
+    letter-spacing: 3px;
     height: 20px;
     line-height: 20px;
     color: white;
     font-family: "Microsoft YaHei" ! important;
+    /*规定段落中的文本不进行换行*/
     white-space: nowrap;
     overflow: hidden;
 }
 h1,h2{
-    margin: 0px 0px;
+    margin: 0 0;
 }
 ul{
-    margin:0px 0px;
-    padding: 0px 0px;
+    margin:0 0;
+    padding: 0 0;
 }
 li{
     display: inline-block;
