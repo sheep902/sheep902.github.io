@@ -2,6 +2,7 @@ html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: url(./bg8.jpg) no-repeat top center;
   /*  background-color: #f3f3f3;*/
 }
 #header {
@@ -69,7 +70,7 @@ body.push .menus {
 }
 
 .main-bg{
-    background: url(./bg8.jpg) no-repeat top center;
+
     background-attachment: fixed;
     background-clip: border-box;
     background-origin: padding-box;
