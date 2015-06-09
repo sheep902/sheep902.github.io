@@ -85,8 +85,10 @@ body.push .menus {
 
 .main-bg{
     /*图像随页面移动*/
-    background: url(./bg8.jpg) no-repeat scroll center;
+    /*background: url(./bg8.jpg) no-repeat scroll center;*/
     background-size: cover;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
 }
 
 .home-box {
