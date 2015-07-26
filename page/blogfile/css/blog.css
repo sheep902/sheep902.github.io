@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { font-family: "微软雅黑"; }
+ul,li{ list-style:none;}
+#cnblogs_post_body .grid li{ list-style:none !important;}
+#home { width: 100%; }
+#header { border-top: medium none; margin-top: 0; padding: 0; }
+#navigator { background-color: #fff; background-image: linear-gradient(to bottom, #fff, #f2f2f2); height: auto; min-height: 40px; position: fixed; top: 0; width: 100%; z-index: 20; }
+#navList a:link,
+#navList a:visited,
+#navList a:active { color: #777; float: none; font-size: 14px; padding: 10px 15px; text-decoration: none; text-shadow: 0 1px 0 #fff; }
+#navList a:hover { background-color: #e5e5e5; box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125) inset; color: #555; padding: 10px 15px; text-decoration: none; text-shadow: 0 1px 0 #fff; }
+#navList a { border: medium none; width: auto; }
+#blogTitle { height: 0; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.banner {background-blend-mode:multiply; background: linear-gradient(110deg, #38b6b8 10%, #d155ff 90%),url("http://images.cnblogs.com/cnblogs_com/LoveOrHate/702829/o_diamond_upholstery.png"); margin-top: 40px; box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset; position: relative; padding: 60px 0 90px; margin-top: 40px; }
+.banner::after { bottom: 0; content: ""; display: block; left: 0; opacity: 0.4; position: absolute; right: 0; top: 0; }
+.banner .page-title { animation: 0.6s ease 0.2s normal none 1 running fade-in-down; }
+.banner h2 { font-size: 20px; text-align: center; color: #fff; }
+.banner h3 { font-size: 16px; text-align: center; color: #fff; margin-top: 10px; }
+.banner h4 { font-size: 14px; text-align: center; color: #fff; margin-top: 10px; }
+.banner h4 a{ color: #fff;}
+.page-title { color: #fff; font-size: 3em; letter-spacing: -1px; margin: 10px 0; text-align: center; }
+#arrow_down { position: absolute; bottom: 30px; left: 50%; margin-left: -10px; width: 20px; height: 20px; animation: arrow_down 5s infinite; z-index: 21; cursor: pointer; }
+.day { box-shadow: 1px 1px 5px #333; border: 1px solid #ccc; border-radius: 5px; padding: 20px; }
+.post { box-shadow: 1px 1px 5px #333; border: 1px solid #ccc; border-radius: 5px; padding:30px 20px; }
+.dayTitle { display: none; }
+.postTitle2 { font-size: 22px; line-height:28px; }
+.postTitle { padding-bottom: 10px; border-bottom: 1px solid #ccc;white-space:nowrap;overflow:hidden;text-overflow: ellipsis; }
+#topics { overflow: auto; }
+#sidebar_search { display: none; }
+#sidebar_myteams{ display: none; }
+.newsItem { box-shadow: 1px 1px 3px #ccc; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 8px; padding: 10px; }
+.sidebar-block { box-shadow: 1px 1px 3px #ccc; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 8px; padding: 10px; }
+.sidebar-block li{ line-height:24px;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
+#sideBar { overflow: auto; }
+.catListTitle{ margin-top:0px; font-size:18px; color:#333;}
+ @keyframes fade-in-down { 0% {
+ opacity: 0;
+ transform: translateY(-10px);
+}
+100% {
+ opacity: 1;
+ transform: translateY(0px);
+}
+}
+ @keyframes arrow_down {  0%, 100% {
+ opacity: 0;
+ transform: translateY(-10px);
+}
+50% {
+ opacity: 1;
+ transform: translateY(0px);
+}
+}
