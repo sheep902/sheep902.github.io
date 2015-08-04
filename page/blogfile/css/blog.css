@@ -5,7 +5,8 @@
   font-family: '微软雅黑';
 }
 body {
-  background: url(http://i.zuifengyun.com/wp-content/themes/iDrink/images/background/bg5.jpg) no-repeat top center;
+  /*  background: url(http://i.zuifengyun.com/wp-content/themes/iDrink/images/background/bg5.jpg) no-repeat top center; */
+  background-color: rgba(0,0,0,.3);
   background-attachment: fixed;
   background-clip: border-box;
   background-origin: padding-box;
@@ -31,28 +32,25 @@ li {
 }
 #navigator {
   position: fixed;
-  top: 0;
+  top: 60px;
   z-index: 20;
-  width: 100%;
-  height: auto;
+  width: 80px;
+  height: 100%;
   min-height: 40px;
-  /*   background-color: #fff; */
-  /*   background-image: linear-gradient(to bottom, #fff, #f2f2f2); */
-  background-color: rgba(0,0,0,.3);
+  background-color: #d5d5d5;
 }
 #navList {
-  position: absolute;
-  left: 50%;
-  margin: 0 auto;
-  margin-left: -188px;
+  width: 80px;
 }
 #navList a:link,
 #navList a:visited,
 #navList a:active {
   float: none;
-  padding: 10px 15px;
+  width: 80px;
+  padding: 10px 0;
   font-size: 14px;
-  color: #fff;
+  color: #666;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -234,12 +232,17 @@ li {
   text-overflow: ellipsis;
 }
 #sideBar {
+  position: absolute;
   overflow: auto;
+  display: none;
 }
 .catListTitle {
   margin-top: 0;
   font-size: 18px;
   color: #333;
+}
+#mainContent .forFlow {
+  margin: 15px;
 }
 @keyframes fade-in-down {
   0% {
@@ -278,13 +281,11 @@ li {
   px-moz-border-radius: 5px;
 }
 .day {
-  /*   box-shadow: 1px 1px 5px #333; */
-  margin-right: 40px;
   padding: 20px;
-  /*   border: 1px solid #ccc; */
   border-radius: 5px;
 }
 #footer {
+  display: none;
   clear: both;
   margin-top: 20px;
   margin-bottom: 0;
@@ -295,4 +296,30 @@ li {
   font-size: 11px;
   color: #fff;
   text-align: center;
+}
+
+#gotop {
+  position: fixed;
+  top: auto;
+  right: 3%;
+  bottom: 20px;
+  z-index: 9999999999;
+  display: block;
+  font-size: 36px;
+  opacity: .7;
+}
+#gotop i {
+  color: #63b8ff;
+}
+#main {
+  width: 90%;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+.headTop {
+  position: fixed;
+  z-index: 70;
+  width: 100%;
+  height: 60px;
+  background-color: #2d2d2d;
 }
