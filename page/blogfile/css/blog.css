@@ -6,7 +6,6 @@
 }
 body {
   /*  background: url(http://i.zuifengyun.com/wp-content/themes/iDrink/images/background/bg5.jpg) no-repeat top center; */
-  background-color: rgba(0,0,0,.3);
   background-attachment: fixed;
   background-clip: border-box;
   background-origin: padding-box;
@@ -38,7 +37,7 @@ li {
   height: 100%;
   min-height: 40px;
   background-color: #d5d5d5;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+  /* box-shadow: 3px 3px 10px rgba(0,0,0,0.3); */
 }
 #navList {
   width: 80px;
@@ -244,6 +243,11 @@ li {
 }
 #mainContent .forFlow {
   margin: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.postCon {
+  padding: 30px 0;
 }
 @keyframes fade-in-down {
   0% {
@@ -273,13 +277,15 @@ li {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   background-color: #fff;
-  background-color: white;
        opacity: .92;
-
+  border: 1px solid #c1c1c1;
   filter: alpha(opacity=92);
   -moz-opacity: .92;
   -khtml-opacity: .92;
   px-moz-border-radius: 5px;
+}
+.forFlow .day:hover {
+   box-shadow: 0 2px 8px #bbb;
 }
 .day {
   padding: 20px;
@@ -324,7 +330,7 @@ li {
   width: 100%;
   height: 60px;
   background-color: #2d2d2d;
-  box-shadow: 80px 3px 10px rgba(0,0,0,0.3);
+/*  box-shadow: 80px 3px 10px rgba(0,0,0,0.3);*/
 }
 .headExpend {
   position: absolute;
